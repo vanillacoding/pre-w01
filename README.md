@@ -1,7 +1,7 @@
 <br>
 
 <p align="center">
-  <img src="/readme-assets/cover.png"  width="500">
+  <img src="/readme-assets/cover.png"  width="500">
 </p>
 
 <br>
@@ -15,8 +15,8 @@
 
 넷플릭스 로그인 화면 UI를 만들어볼까요?
 
+👉🏻 https://www.netflix.com/kr/login
+
 <p align="center">
   <img src="/readme-assets/login.png"  width="500">
 </p>
-
-https://www.netflix.com/kr/login
