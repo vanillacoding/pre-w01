@@ -1,7 +1,7 @@
 <br>
 
 <p align="center">
-  <img src="/readme-assets/cover.png"  width="500">
+  <img src="/readme-assets/vaco.png"  width="100%">
 </p>
 
 <br>
