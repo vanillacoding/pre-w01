@@ -1,4 +1,185 @@
 body {
-  background-color: black;
-  color: grey;
+  margin: 0;}
+/*백그라운드 이미지와 필터*/
+.background {
+  background-image: url(images/bg.jpg);}
+.filter {
+  background-color: rgba(0,0,0, 0.4);}
+
+/*로고들어가는 공간*/
+.to-main {
+  margin-left: 3%;
 }
+.to-main #logo {
+  margin-top: 22.5px;
+}
+
+/*로그인박스 스타일 코드*/
+.login-box-container {
+  max-width: 450px;
+  height: 841px;
+  margin: 0 auto;
+  padding: 0 5%;
+  font-size: 0px;
+  font-family: sans-serif;}
+.login-box-container:before {
+  content: "";
+  display: block;
+  height: 91px;}
+.login-box {
+  width: 100%;
+  height: 660px;
+  margin-bottom: 90px;
+  padding: 60px 68px 40px;
+  background-color: rgba(0,0,0,0.85);
+  border-radius: 5px;
+  box-sizing: border-box;}
+.login-box-Upper {
+  width: 314px;
+  height: 378px;}
+.login-box-Upper h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0 0 28px;
+  height: 43px;}
+.login-box-Upper form {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 235px;}
+.login-box-Upper form .idpw {
+  padding-bottom: 16px;
+  max-width: 100%;
+  position: relative;}
+.login-box-Upper form .idpw .box {
+  max-width: 100%;
+  background-color: #333333;
+  height: 34px;
+  border-radius: 5px;
+  padding: 16px 20px 0;
+  font-size: 16px;
+  color: #8c8c8c;}
+.login-box-Upper form .btn{
+  width: 100%;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px;
+  margin: 24px 0 12px;
+  background-color: #E50815;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;}
+.login-box-Upper .extra-info {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: #e6e6e6;}
+.login-box-Upper .extra-info span{
+  font-size: 14px;
+  float: left;}
+.login-box-Upper .extra-info a{
+  font-size: 14px;
+  text-decoration: none;
+  color: #e6e6e6;
+  float: right;}
+.login-box-Upper .extra-info a:hover {
+  text-decoration: underline;}
+.login-box-Lower {
+  width: 314px;
+  height: 182px;}
+.login-box-Lower .signup {
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  height: 21px;
+  margin: 16px 0 0;
+  padding: 0;
+  color: #737373;}
+.login-box-Lower .signup a{
+  text-decoration: none;
+  color: #fff;}
+.login-box-Lower .signup a:hover{
+  text-decoration: underline;}   
+.login-box-Lower .captchaInfo {
+  width: 100%;
+  height: 132px;
+  margin: 11px 0 0;
+  padding: 0;
+  color: #737373;
+  font-size: 13px;}
+.login-box-Lower .captchaInfo a {
+  text-decoration: none;}
+.login-box-Lower .captchaInfo a:hover {
+  text-decoration: underline;}
+.login-box-Lower .captchaSpace {
+  width: 100%;
+  height: 85px;}
+
+/*footer 스타일 코드*/
+.footer-container {
+  color: #757575;
+  font-size: 0px;
+  min-width: 190px;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+  background-color: rgba(0,0,0,0.85);}
+.footer-divider {
+  border-color: #737373;
+  display: none;
+  height: 0;
+  width: 100%;}
+.footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0;
+  font-size: 16px;}
+.footer-top {
+  height: 21px;
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 1em;}
+.footer-top a {
+  text-decoration: none;
+  color: #737373;}
+.footer-middle {
+  width: 100%;
+  height: 66px;
+  font-size: 13px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;}
+.footer-middle li {
+  width: 24.5%;
+  margin-bottom: 16px;
+  padding: 0 22px 0 0;
+  min-width: 100px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;}
+.footer-middle li a {
+  text-decoration: none;
+  color: #737373;}
+.footer-middle li a:hover {
+  text-decoration: underline;}
+.footer-languageSelect {
+  margin-top: 20px;}
+.footer-languageSelect .selector {
+  padding: 12px 26px 12px 50px;
+  background-color: #000000;
+  color: #737373;
+  border-color: #737373;
+  border-width: 1px;
+  border-radius: 2px;
+  width: 119px;
+  font-size: 13px;
+  appearance: none;}
+.footer-bottom {
+  width: 100%;
+  margin: 20px 0;
+  font-size: .75em;
+  line-height: 1em;
+  color: #737373;}
+.footer-bottom .lines {
+  margin-top: 4px;}
