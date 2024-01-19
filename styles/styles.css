@@ -32,23 +32,27 @@ header a img {
 
 /* main */
 main {
+  min-height: 100vh;
+}
+
+main .main-container{
   display: flex;
   flex-direction: column;
-  margin: 0 auto 90px;
-  width: 450px;
-  min-height: 660px;
+  margin: 0 auto;
   border-radius: 4px;
   box-sizing: border-box;
+  width: 450px;
+  height: 660px;
   padding: 60px 68px 40px;
   background: rgba(0,0,0,.75);
   color: #fff;
 }
 
-main form {
+main .main-container form {
   flex-grow: 1;
 }
 
-main form h2 {
+main .main-container form h2 {
   margin-bottom: 28px;
   font-size: 32px;
 }
