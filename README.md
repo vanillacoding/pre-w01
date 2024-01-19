@@ -1,4 +1,4 @@
-# 바닐라코딩 프리코스 1주차 과제 (이양래)
+# 💻 바닐라코딩 프리코스 1주차 과제 (이양래)
 
 <p align="center">
   <img src="/readme-assets/vaco.png"  width="100%">
@@ -10,7 +10,7 @@
 
 <br>
 
-## 과제 파일 구조
+## 🗂️ 과제 파일 구조
 ```
 📂images
 ㄴbg.gpg
@@ -31,14 +31,15 @@ README.md
 ```
 <br>
 
-## 과제 중요 포인트
+## 💡 과제 중요 포인트
 - input placeholder 가상 클래스 활용
-<img src="/readme-assets/input.gif" width="100%">
+<img src="/readme-assets/input.gif">
+<br>
 - checkbox 가상 요소 활용
-<img src="/readme-assets/checkbox.gif" width="100%">
+<img src="/readme-assets/checkbox.gif">
 <br>
 
-## 참고 자료
+## 📚 참고 자료
 - [How to organize CSS @9elements](https://9elements.com/css-rule-order/)
 - [W3C Markup Validator](https://validator.w3.org/)
 - [OpenWAX](https://chromewebstore.google.com/detail/openwax/bfahpbmaknaeohgdklfbobogpdngngoe?hl=ko&pli=1) (chrome extension)
