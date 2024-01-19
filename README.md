@@ -1,4 +1,4 @@
-<br>
+# 바닐라코딩 프리코스 1주차 과제 (이양래)
 
 <p align="center">
   <img src="/readme-assets/vaco.png"  width="100%">
@@ -10,44 +10,37 @@
 
 <br>
 
-## 과제 시작 & 제출 방법
-
-과제를 시작하고 제출하는 방법은 아래 문서를 참고해주세요.
+## 과제 파일 구조
+```
+📂images
+ㄴbg.gpg
+ㄴfavicon.ico
+ㄴglobe.png (추가)
+ㄴlogo.png
+📂readme-assets
+ㄴcheckbox.gif (추가)
+ㄴinput.gif (추가)
+ㄴlogin.png
+ㄴvacp.png
+📂styles
+ㄴreset.css (추가)
+ㄴstyles.css
+.gitignore
+index.html
+README.md
+```
 <br>
 
-👉🏻 [프리코스 과제 가이드 문서](https://vanillacoding.notion.site/c2fb1452089345f4a44286be050d3541?pvs=4)
-<br><br>
-
-
-# Netflix
-
-넷플릭스 좋아하시나요?
-
-여러분에게 주어진 미션은 아래와 같이 넷플릭스 로그인 화면 UI를 똑같이 만들어 보는 것입니다. 😎
-
-아래 주어진 참고자료를 읽고 HTML, CSS를 잘 활용하여 최대한 비슷하게 완성해보도록 하세요!
-
-👉🏻 https://www.netflix.com/kr/login
-
-<p align="left">
-  <img src="/readme-assets/login.png"  width="500">
-</p>
-
+## 과제 중요 포인트
+- input placeholder 가상 클래스 활용
+<img src="/readme-assets/input.gif" width="100%">
+- checkbox 가상 요소 활용
+<img src="/readme-assets/checkbox.gif" width="100%">
 <br>
 
-## 참고자료
-
-- [바닐라코딩 스타터키트](https://vanilla-coding.gitbook.io/starter-kit)
-- [MDN HTML](https://developer.mozilla.org/ko/docs/Learn/HTML) (좌측 사이드메뉴의 목차 참고)
-- [MDN CSS](https://developer.mozilla.org/ko/docs/Learn/CSS) (좌측 사이드메뉴의 목차 참고)
-
+## 참고 자료
+- [How to organize CSS @9elements](https://9elements.com/css-rule-order/)
+- [W3C Markup Validator](https://validator.w3.org/)
+- [OpenWAX](https://chromewebstore.google.com/detail/openwax/bfahpbmaknaeohgdklfbobogpdngngoe?hl=ko&pli=1) (chrome extension)
 <br>
 
-## 유의사항
-
-- 윈도우 화면 사이즈 변화에 대하여 대응하지 않아도 괜찮으니, 여러분이 편한 사이즈로 작업하세요.
-- 완벽히 똑같을 필요는 없지만, 할 수 있는한 최대한 똑같이 만들어보도록 해보세요.
-- 모든 HTML 태그와 CSS 속성에 대해 외우려고 하지 마세요. 자주 사용하면 자연스럽게 부분적으로 외워지며, 확신이 들지 않을때는 항상 검색해보고 작업하면 됩니다.
-- 반드시 크롬 브라우저를 사용하세요.
-- 도움이 필요하면 꼭 도움을 요청하세요! 🙋🏻‍♂️
-  
