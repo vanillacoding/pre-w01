@@ -33,10 +33,10 @@ README.md
 
 ## 💡 과제 중요 포인트
 - input placeholder 가상 클래스 활용
-<img src="/readme-assets/input.gif">
-<br>
+<img src="/readme-assets/input.gif" width="300px">
+
 - checkbox 가상 요소 활용
-<img src="/readme-assets/checkbox.gif">
+<img src="/readme-assets/checkbox.gif" width="300px">
 <br>
 
 ## 📚 참고 자료
