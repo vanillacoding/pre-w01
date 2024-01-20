@@ -1,4 +1,4 @@
-# 💻 바닐라코딩 프리코스 1주차 과제 (이양래)
+# 💻 Netflix 1주차 과제 (이양래)
 
 <p align="center">
   <img src="/readme-assets/vaco.png"  width="100%">
@@ -13,7 +13,7 @@
 ## 🗂️ 과제 파일 구조
 ```
 📂images
-ㄴbg.gpg
+ㄴbg.jpg
 ㄴfavicon.ico
 ㄴglobe.png (추가)
 ㄴlogo.png
