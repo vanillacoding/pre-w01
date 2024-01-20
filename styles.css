@@ -1,4 +1,223 @@
+/* reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+a,
+input,
+ul,
+li,
+ol {
+  direction: none;
+  list-style: none;
+  text-decoration: none;
+}
+input {
+  outline: 0;
+  border: 0;
+}
+
+/* 공통 CSS */
+a {
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  color: #737373;
+  text-align: center;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* style CSS */
+header {
+  position: absolute;
+  top: 25px;
+  left: 57px;
+  width: 167px;
+  height: 45px;
+}
+
+header a,
+header a img {
+  width: inherit;
+}
+
+/* body */
 body {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  color: #737373;
+  cursor: default;
   background-color: black;
-  color: grey;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/bg.jpg");
+  background-size: cover;
+}
+
+body main .loginForm {
+  width: 450px;
+  height: 660px;
+  margin: 90px auto 0;
+  padding: 65px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+body main .loginForm #loginForm h1 {
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+body main .loginForm #loginForm > * {
+  display: flex;
+}
+
+body main .loginForm #loginForm input {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: white;
+  cursor: default;
+  background-color: #333;
+}
+
+body main .loginForm #loginForm input:nth-child(2) {
+  margin: 25px 0 15px;
+}
+
+body main .loginForm #loginForm button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  margin: 40px 0 16px;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  background-color: #e50914;
+}
+
+body main .loginForm #loginForm .info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #b3b3b3;
+}
+
+body main .loginForm #loginForm .info label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+  width: 37%;
+}
+body main .loginForm #loginForm .info label input[type="checkbox"] {
+  width: 17px;
+  accent-color: #737373;
+}
+
+body main .loginForm #loginForm .info a {
+  color: #b3b3b3;
+}
+
+body main .loginForm .signup {
+  margin-top: 80px;
+  font-size: 16px;
+}
+body main .loginForm .signup a {
+  font-weight: bold;
+  color: white;
+}
+
+body main .loginForm .signup span {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+body main .loginForm .signup span a.blue {
+  color: #0071eb;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  min-width: 100vh;
+  margin-top: 90px;
+  padding: 30px 0 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1000px;
+  height: 360px;
+  margin: 0 auto;
+}
+
+footer .footer .list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 1000px;
+  font-size: 13px;
+}
+
+footer .footer .list a {
+  width: 250px;
+  height: 30px;
+  text-align: left;
+}
+
+footer .footer .controlSelect {
+  position: relative;
+  width: 119px;
+  height: 48px;
+}
+
+footer .footer .controlSelect .iconImg {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+footer .footer .controlSelect .iconImg img {
+  width: 18px;
+  height: auto;
+}
+footer .footer .controlSelect select {
+  width: inherit;
+  height: inherit;
+  outline-style: none;
+  border-radius: 4px;
+  border: 1px solid #333;
+  color: #757575;
+  font-size: 15px;
+  letter-spacing: -1px;
+  padding-left: 45px;
+  background-color: #000;
+
+  /* Arrow */
+  appearance: none;
+  background-image: url("images/down_arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
+}
+
+footer .footer p:last-child {
+  font-size: 12px;
 }
