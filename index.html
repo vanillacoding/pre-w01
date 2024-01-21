@@ -6,11 +6,55 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header>
       <img src="images/logo.png" />
     </header>
-    <main>Login UI</main>
-    <footer>Footer content</footer>
+    
+    <main>
+      <div class="login">로그인</div>
+      
+      <div class="input-box">
+          <div class="input">
+            <input type="text" name="tel" placeholder="이메일 주소 또는 전화번호"> <!-- name 수정 -->
+            <br />
+            <input type="text" name="tel" placeholder="비밀번호"> <!-- name 수정 -->
+          </div>
+      </div>
+      
+      <!-- 로그인 버튼은 class 정의 안해주는게 좋나? -->
+      <button>로그인</button>
+      
+
+      <div class="login-detail">
+          <label><input type="checkbox" name="로그인 정보 저장" value="saved">로그인 정보 저장</label> 
+          <a href="https://www.netflix.com/kr/LoginHelp">도움이 필요하신가요?</a>
+      </div>
+
+      <div class="cta-signup">
+          <a>Netflix 회원이 아닌가요?</a> <a href="https://www.netflix.com/kr/">지금 가입하세요.</a>
+      </div>
+      
+      <div class="desc-captcha">
+        <a>이 페이지는 Google reCAPTCHA의 보호를 받아 사용자가 로봇이 아님을 확인합니다.</a> <a>자세히 알아보기</a>
+      </div>
+      
+    </main>
+
+    <footer>
+      <div>
+        <a>질문이 있으신가요? 문의 전화:</a>  <a>00-308-321-0161 (수신자 부담)</a>
+      </div>
+    
+      <div>
+        <a>자주 묻는 질문</a><a>고객센터</a><a>이용약관</a><a>개인정보 처리방침</a>
+        </br>
+        <a>쿠키 설정</a><a>회사 소개</a>
+      </div>
+
+
+    </footer>
   </body>
-</html>
+
+  </html>
