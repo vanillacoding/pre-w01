@@ -1,4 +1,343 @@
 body {
   background-color: black;
   color: grey;
+  margin: 0;
+}
+
+header {
+  height : 50px;
+  display: flex; 
+  align-items: center
+}
+
+.logo{
+  margin-left: 3%;
+}
+
+.main_div
+{
+  width: 100vw;
+  height: 650px;
+}
+
+.bgrd{
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+  url('https://assets.nflxext.com/ffe/siteui/vlv3/16006346-87f9-4226-bc25-a1fb346a2b0c/d3a7ba79-d4b6-4406-bb77-bdf1032980c2/KR-ko-20240115-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+  background-size: cover;
+}
+
+.loginbox{
+  margin: auto;
+  background-color: black;
+  width: 330px;
+  height: 550px;
+}
+
+.loginform{
+  padding-top: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 250px;
+}
+
+.loginform h1{
+  color: white;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+.inputcontainer{
+  position: relative;
+  width: 231px;
+}
+
+#idinput{
+  box-sizing: border-box;
+  width: 100%;
+  height: 35px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  border:0;
+  border-radius: 3px;
+  outline: none;
+  font-size: 12px;
+  color: white;
+  background-color: rgb(46, 46, 46);
+}
+
+#passinput{
+  box-sizing: border-box;
+  width: 231px;
+  height: 35px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  border:0;
+  border-radius: 3px;
+  outline: none;
+  font-size: 12px;
+  color: white;
+  background-color: rgb(46, 46, 46);
+}
+
+.placeholder-text {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-100%);
+  font-size: 11px;
+  pointer-events: none;
+  transition: font-size 0.2s;
+  transform-origin: left top;
+}
+
+input:focus + .placeholder-text {
+  top: 30%;
+  font-size: 8px;
+}
+
+
+#loginbtn{
+  width: 231px;
+  height: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border:0;
+  border-radius: 3px;
+  outline: none;
+  font-size: 12px;
+  font-weight: 400;
+  color:white;
+  background-color: red;
+}
+
+.btnhelparea{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.checkboxarea{
+  display: flex;
+  align-items: center;
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+#check_btn + label > span{
+  vertical-align: middle;
+  color:rgb(193, 193, 193);
+  font-size: 10px;
+  font-weight: 300;
+ }
+
+#check_btn{
+  accent-color: white;
+}
+
+.helparea{
+  float: right;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: right;
+  font-size: 10px;
+  font-weight: 300;
+  color:rgb(193, 193, 193);
+}
+
+#helplink{
+  color:rgb(193, 193, 193);
+  text-decoration: none;
+}
+
+#helplink:visited {
+  color:rgb(193, 193, 193);
+  text-decoration: none;
+}
+
+#helplink:hover {
+  color:rgb(193, 193, 193);
+  text-decoration: underline;
+}
+
+#helplink:active {
+  color:rgb(193, 193, 193);
+  text-decoration: none;
+}
+
+.registerarea{
+  color:rgb(137, 137, 137);;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+#register{
+  color:white;
+  text-decoration: none;
+}
+
+#register:visited {
+  color:white;
+  text-decoration: none;
+}
+
+#register:hover {
+  color:white;
+  text-decoration: underline;
+}
+
+#register:active {
+  color:white;
+  text-decoration: none;
+}
+
+.recapcha{
+  color:rgb(137, 137, 137);;
+  font-size: 10px;
+}
+
+details {
+  color: rgb(0, 145, 255);
+}
+
+details > summary{
+  font-size: 10px;
+  outline: none;
+}
+
+summary {
+	list-style-type: none;
+}
+
+.summary{
+  padding-top: 5px;
+  font-size: 10px;
+  color:rgb(137, 137, 137);
+}
+
+#recapchalink{
+  color: rgb(0, 145, 255);
+  text-decoration: none;
+}
+
+#recapchalink:visited {
+  color: rgb(0, 145, 255);
+  text-decoration: none;
+}
+
+#recapchalink:hover {
+  color: rgb(0, 145, 255);
+  text-decoration: underline;
+}
+
+#recapchalink:active {
+  color: rgb(0, 145, 255);
+  text-decoration: none;
+}
+
+footer {
+  bottom: 0;
+  height: 310px;
+  padding-top: 100px;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+.contactarea{
+  font-size: 12px;
+  margin-bottom: 15px;
+  color:rgb(137, 137, 137);
+}
+
+#contactnum{
+  color:rgb(137, 137, 137);
+  text-decoration: none;
+}
+
+#contactnum:visited {
+  color:rgb(137, 137, 137);
+  text-decoration: none;
+}
+
+#contactnum:hover {
+  color:rgb(137, 137, 137);
+  text-decoration: underline;
+}
+
+#contactnum:active {
+  color:rgb(137, 137, 137);
+  text-decoration: none;
+}
+
+.tablearea {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid transparent;
+  padding: 8px;
+  font-size: 10px;
+  font-weight: 200;
+  text-align: left;
+}
+
+#tabletext{
+  color:rgb(137, 137, 137);
+  text-decoration: none;
+}
+
+#tabletext:visited {
+  color:rgb(137, 137, 137);
+  text-decoration: none;
+}
+
+#tabletext:hover {
+  color:rgb(137, 137, 137);
+  text-decoration: underline;
+}
+
+#tabletext:active {
+  color:rgb(137, 137, 137);
+  text-decoration: none;
+}
+
+#lang{
+  border: 1px solid rgb(137, 137, 137);
+  background-color: transparent;
+  width: 100px;
+  height: 30px;
+  margin-bottom: 25px;
+  padding-left:20px;
+  font-size: 10px;
+  color: rgb(137, 137, 137);
+}
+
+.copyright{
+  color:rgb(137, 137, 137);
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+#copytext{
+  color:rgb(137, 137, 137);
+  text-decoration: none;
+}
+
+#copytext:visited {
+  color:rgb(137, 137, 137);
+  text-decoration: none;
+}
+
+#copytext:hover {
+  color:rgb(137, 137, 137);
+  text-decoration: underline;
+}
+
+#copytext:active {
+  color:rgb(137, 137, 137);
+  text-decoration: none;
 }

@@ -7,10 +7,109 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <img src="images/logo.png" />
-    </header>
-    <main>Login UI</main>
-    <footer>Footer content</footer>
+    <div class = "main_div bgrd">
+
+     <header>
+       <img src="images/logo.png" class = "logo"/>
+     </header>
+
+      <div class = "loginbox">
+        <div class = "loginform">
+          <h1>로그인</h1>
+          <div class = "inputcontainer">
+            <input type = "text" id="idinput"> 
+            <div class = "placeholder-text">
+              이메일 주소 또는 전화번호
+            </div>
+          </div>
+          <div class = "inputcontainer">
+          <input type = "password" id="passinput">
+            <div class = "placeholder-text">
+              비밀번호
+            </div>
+          </div>
+          <button type="button" id="loginbtn">로그인</button>
+
+          <div class = "btnhelparea">
+            <div class = "checkboxarea">
+              <input type="checkbox" id="check_btn"/>
+              <label for="check_btn"><span>로그인 정보 저장</span></label>
+            </div>
+            <div class = "helparea">
+              <A herf = "https://www.netflix.com/kr/LoginHelp" target="_top" id = "helplink">도움이 필요하신가요?</A> 
+            </div>
+         </div>
+
+        <div class = "btmarea">
+          <p class = "registerarea"> Netflix 회원이 아닌가요?
+            <A herf = "https://www.netflix.com/kr/" target="_top" id = "register">지금 가입하세요.</A> 
+          </p>
+
+          <p class = "recapcha"> 이 페이지는 Google reCAPTCHA의 보호를 받아 사용자가 로봇이 아님을 확인합니다.</p>
+          <details>
+            <summary>자세히 알아보기. </summary>
+            <div class = "summary">
+             Google reCAPTCHA가 수집하는 정보에는 Google<br> 
+             <A herf = "https://policies.google.com/privacy" target= "_top" id = "recapchalink">개인정보처리방침</A>과 <A herf = "https://policies.google.com/terms" target = "_top" id = "recapchalink">서비스 약관</A>이 적용되며, 해당 정보는<br>
+             reCAPTCHA 서비스 제공, 관리 및 개선과 일반적인 보안<br>
+             유지에 사용됩니다(Google의 개인 맞춤 광고에 사용 안 함).
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer>
+      <div class = "contactarea"> 질문이 있으신가요? 문의 전화:
+        <A herf = "tel:00-308-321-0161 (%EC%88%98%EC%8B%A0%EC%9E%90 %EB%B6%80%EB%8B%B4)" target="_top" id = "contactnum">00-308-321-0161 (수신자 부담)</A>
+      </div>
+
+      <table class = "tablearea">
+        <tr>
+          <th>
+            <A herf = "https://help.netflix.com/support/412" target="_top" id = "tabletext">자주 묻는 질문</A>
+          </th>
+          <th>
+            <A herf = "https://help.netflix.com/" target="_top" id = "tabletext">고객센터</A>
+          </th>
+          <th>
+            <A herf = "https://help.netflix.com/legal/termsofuse" target="_top" id = "tabletext">이용약관</A>
+          </th>
+          <th>
+            <A herf = "https://help.netflix.com/legal/privacy" target="_top" id = "tabletext">개인정보 처리방침</A>
+          </th>
+        </tr>
+
+        <tr>
+          <th>
+            <A herf = "https://www.netflix.com/kr/login" target="_top" id = "tabletext">쿠키 설정</A>
+          </th>
+          <th>
+            <A herf = "https://help.netflix.com/legal/corpinfo" target="_top" id = "tabletext">회사 정보</A>
+          </th>
+        </tr>
+      </table>
+ 
+      <select id = "lang">
+        <option value = "kor">한국어</option>
+        <option value = "eng">English</option>
+      </select>
+      
+      <div class = "copyright">
+        넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 00-308-321-0161 (수신자 부담)<br>
+        대표: 레지널드 숀 톰프슨<br>
+        이메일 주소: korea@netflix.com<br>
+        주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161<br>
+        사업자등록번호: 165-87-00119<br>
+        클라우드 호스팅: Amazon Web Services Inc.<br>
+        <A herf = "https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1658700119" id ="copytext">공정거래위원회 웹사이트</A>
+      </div>
+
+
+    </footer>
+
   </body>
 </html>
