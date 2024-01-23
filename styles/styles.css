@@ -1,4 +1,3 @@
-/* hidden */
 .a11y-hidden {
   position: absolute;
   overflow: hidden;
@@ -8,7 +7,6 @@
   clip-path: polygon(0 0, 0 0, 0 0);
 }
 
-/* common */
 body {
   height: 100%;
   background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/bg.jpg);
@@ -19,7 +17,6 @@ a:hover{
   text-decoration: underline;
 }
 
-/* header */
 header {
   display: flex;
   align-items: center;
@@ -32,7 +29,6 @@ header a img {
   height: 45px;
 }
 
-/* main */
 main {
   min-height: 100vh;
 }
@@ -59,7 +55,6 @@ main .main-container form h2 {
   font-size: 32px;
 }
 
-/* input-container */
 .input-container{
   display: flex;
   flex-direction: column;
@@ -108,7 +103,6 @@ main .main-container form h2 {
   width: 100%;
 }
 
-/* login-container */
 .login-container{
   color: #b3b3b3;
 }
@@ -138,7 +132,6 @@ main .main-container form h2 {
   padding-left: 20px;
 }
 
-/* rememberUserInfo checkbox */
 .login-container .button-bottom .login-help input{
   width: 0;
 }
@@ -183,7 +176,6 @@ main .main-container form h2 {
   transition: all 0.1s;
 }
 
-/* other-container */
 .other-container{
   height: 161px;
 }
@@ -210,7 +202,6 @@ main .main-container form h2 {
   color: #0071eb;
 }
 
-/* footer */
 footer {
   width: 100%;
   background: rgba(0,0,0,.75);
@@ -224,12 +215,10 @@ footer .footer-container{
   padding: 30px 0;
 }
 
-/* contact-number */
 .contact-number{
   margin-bottom: 30px;
 }
 
-/* links */
 .links{
   font-size: 13px;
 }
@@ -243,7 +232,6 @@ footer .footer-container{
   margin-bottom: 16px;
 }
 
-/* language */
 .language{
   position: relative;
   margin-top: 20px;
@@ -276,7 +264,6 @@ footer .footer-container{
   color: #777;
 }
 
-/* about-us */
 .about-us{
   display: flex;
   flex-direction: column;
