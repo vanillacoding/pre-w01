@@ -1,4 +1,35 @@
 body {
   background-color: black;
   color: grey;
+  margin: 0;
+  position: relative;
+}
+
+header {
+  position: absolute;
+  padding: 24px;
+  top: 0;
+  left: 0;
+}
+
+header img{
+  width: 148px;
+}
+
+
+main{
+  padding: 1px;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+  url(./images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.login-box{
+  background-color: rgba(0,0,0,0.6);
+  width: 314px;
+  margin: 200px auto;
+  padding: 48px 68px;
 }

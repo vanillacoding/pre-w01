@@ -8,9 +8,30 @@
   </head>
   <body>
     <header>
-      <img src="images/logo.png" />
+      <nav>
+        <a>
+          <h1><img src="images/logo.png" /></h1>
+        </a>
+      </nav>
     </header>
-    <main>Login UI</main>
+    <main>
+      <section class="login-box">
+        <h2>로그인</h2>
+        <input type="text" placeholder="이메일 주소 또는 전화번호" />
+        <input type="password" placeholder="비밀번호" />
+        <button class="login-submit">로그인</button>
+        <p>OR</p>
+        <button class="login-code">로그인 코드 사용하기</button>
+        <button class="login-find-password">비밀번호를 잊으셨나요?</button>
+        <input type="checkbox" name="log-info-save" />
+        <label name="log-info-save">로그인 정보 저장</label>
+        <p>Netflix 회원이 아닌가요?<a href="/">지금 가입하세요.</a></p>
+        <p class="sub-info">
+          이 페이지는 Google reCAPTCHA의 보호를 받아 사용자가 로봇이 아님을
+          확인합니다. <a href="/">자세히 알아보기.</a>
+        </p>
+      </section>
+    </main>
     <footer>Footer content</footer>
   </body>
 </html>
