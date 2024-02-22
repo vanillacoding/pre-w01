@@ -1,4 +1,77 @@
-body {
-  background-color: black;
-  color: grey;
+html {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/bg.jpg');
+  background-position: center top;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.head-logo {
+  margin-left: 120px;
+}
+main {
+  /* background-color: black; */
+  /* background-size: cover; */
+  /* color: grey; */
+  /* position: relative; */
+}
+
+header {
+  height: 80px;
+}
+
+.login-box {
+  display: block;
+  position: relative;
+  background-color: #000000c5;
+  /* size: 450px 600px; */
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 450px;
+  height: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 60px 30px;
+}
+
+.login-form {
+  color: gray;
+  text-align: left;
+  margin: 20 auto;
+}
+
+.login-form > h1 {
+  margin-top: 30px;
+  color: white;
+}
+
+.input_form {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.label-input {
+  position: absolute;
+  pointer-events: none;
+  color: rgba(215, 229, 229, 1);
+  margin-top: -33px;
+  margin-left: 10px;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.input_content {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: rgba(54, 51, 51, 0.5);
+  border: none;
+}
+
+.input_content:focus + label, 
+.input_content:valid + label {
+  transform: translateY(-50%);
+  font-size: 10px;
 }
