@@ -4,28 +4,36 @@ html{
   background-size: cover;
   position: relative;
   width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 body{
   color: azure;
   margin: 0;
+  width: 100%;
 }
 
 header {
-  padding-left: 80px;
+  padding-left: 15%;
   padding-top: 20px;
 }
 
 .main {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  margin-top: 10em;
+  min-height: 100%;
+}
+
+.mainchild{
   text-align: left;
   background: rgba(0,0,0,0.7);
   border: none;
+  border-radius: 5px;
   padding: 70px 70px;
-  margin-left: 1000px;
-  margin-bottom: 100px;
-  position: relative;
-  text-decoration: none;
 }
 
 .login{
@@ -93,8 +101,12 @@ header {
 }
 
 .chkbox{
-  display: block;
+  display: inline-block;
   font-size: 16px;
+}
+
+.chkbox span,a {
+  vertical-align: middle;
 }
 
 .notuser{
@@ -115,31 +127,48 @@ header {
   color: rgb(67, 76, 255);
 }
 
-.bottom{
-  display: block;
-  background: rgba(0,0,0,0.7);
-  background-size: 100%;
-  position: relative;
+footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  padding: 50px 500px;
-  padding-bottom: 100px;
+}
+
+.bottom{
+  display: flex;
+  position: relative;
   color: rgb(163, 163, 163);
-  text-align: left;
+  display: block;
+  justify-content: center;
+}
+
+.bottomchild{
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 4%;
+  position: absolute;
+  justify-content: center;
 }
 
 .tag {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
+  display: -moz-inline-grid;
   text-decoration: underline;
+  margin-bottom: 10px;
 }
 
-.tag-2{
-  display: flex;
+.tag a{
   justify-content: space-between;
-  width: 18.8%;
-  text-decoration: underline;
-  margin-top: 25px;
+  padding-right: 20%;
+}
+
+.qnacoinfo{
+  padding-left: 30px;
+}
+
+.language span,a,span{
+  vertical-align: middle;
 }
 
 .language{
@@ -147,14 +176,14 @@ header {
   border: none;
   border-radius: 5px;
   color: white;
-  padding: 8px 8px;
+  padding: 5px 5px;
   text-align: center;
   display: inline-block;
   border: 1px solid white;
   align-content:center;
-  margin-top: 25px;
+  margin-top: 20px;
   padding-bottom: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .language a{
