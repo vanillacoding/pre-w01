@@ -1,0 +1,204 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: grey;
+}
+
+@media screen and (min-width: 740px){
+  body{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./images/bg.jpg");
+  }
+  main{
+    padding: 90px;
+    justify-content: center;
+  }
+  #loginbox{
+    width: 450px;
+    height: 650px;
+    padding: 50px 65px;
+  }
+  #recapsize{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 739px){
+  #loginbox{
+    width: 100%;
+    border-bottom: 1px solid dimgray;
+    padding: 10px 45px;
+  }
+  #login-end{
+    margin: 50px 0px;
+  }
+  #recapsize{
+    display: flex;
+    flex-wrap: wrap; 
+  }
+}
+
+#logo{
+  padding: 18px 18px;
+  width: 190px;
+}
+
+main{
+  display: flex;
+}
+
+#loginbox{
+
+  background-color: rgba(3, 3, 3, 0.7);
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-self: center;
+  
+}
+
+#login-kor{
+  font-size: 33px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+input{
+  padding: 0rem 1rem;
+  box-sizing: border-box;
+  background-color: rgb(51, 51, 51);
+  caret-color: white;
+  color: white;
+}
+
+::placeholder{
+  color: rgb(190, 189, 189);
+}
+
+input:focus::placeholder{
+  color:transparent;
+}
+
+#pwbox{
+  margin: 15px 0px 40px 0px;
+}
+
+
+input, #login-btn{
+  width: 100%;
+  height: 48px;
+  border: 0px;
+  border-radius: 4px;
+  margin: 2px;
+  font-size: 14px;
+}
+
+#login-btn{
+  background-color: rgb(229, 9, 20);
+  color: white;
+  font-size: 15px;
+
+}
+
+#login-middle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+#login-middle, #login-end{
+  color: rgb(124,136,132);
+}
+
+#checkboxline{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#checkbox01{
+  width: 16px;
+  margin-right: 5px;
+  accent-color: white;
+  border-radius: 5px;
+}
+
+#nowsignin{
+  color: white;
+  font-weight: 700;
+}
+
+#recapsize{
+  margin-top: 1rem;
+  font-size:12px;
+}
+
+#detail-atag{
+  color: rgb(0,113,235);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+footer{
+  width: 100%;
+  height: 420px;
+  background-color: black; opacity: 0.8;
+  position: relative;
+  bottom: 0;
+  margin: 0;
+  padding: 35px 40px 0px 40px;
+}
+
+#footer-atags{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 10px 0px 13px 0px;
+  font-size: 13px;
+}
+
+#footer-atags div{
+  width: 25%;
+  margin-top: 15px;
+}
+
+#footer-atags a{
+  color: rgb(190, 189, 189);
+}
+
+#lang-select{
+  width: 110px;
+  height: 45px;
+  background-color: black;
+  color: white;
+  margin: 20px 0px 15px 0px;
+  padding: 0px 10px;
+  border: 1px solid gray;
+}
+
+#langbox{
+  position: relative;
+}
+#globe{
+  position: absolute;
+  top: 31px;
+  left: 12px;
+}
+
+#company-info{
+  font-size: 12px;
+}
