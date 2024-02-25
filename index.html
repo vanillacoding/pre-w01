@@ -1,16 +1,189 @@
 <!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <title>Netflix</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <img src="images/logo.png" />
-    </header>
-    <main>Login UI</main>
-    <footer>Footer content</footer>
+<html>
+<head>
+  <style>
+  *{
+    box-sizing: border-box;
+    padding: 0;
+  margin: 0;
+  }   
+
+  body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url(netflix2.jpg);
+  background-position: center;
+  background-size: cover;
+  }
+
+  a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  } 
+
+  img {
+  vertical-align: middle;
+  }
+
+  .login__wrapper {
+    width: 450;
+    height: 707;
+    background-color: black;
+    padding: 48px 68px;
+    margin:0 auto; 
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .title span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  }
+
+  .login__title {
+  font-size: 24px;
+  color: #fff;
+  padding-bottom: 30px;
+  }
+
+  .form-login {
+  width: 50%;
+  align-items: center;
+  }
+
+  .email__container,
+  .password__container {
+  padding: 24px 16px 8px;
+  }
+
+  .input__title {
+  display: block;
+  margin-bottom: 0;
+  }
+
+  .input__container {
+  width: 100%;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  }
+
+  .input__container input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  padding-right: 18px;
+  color: #444444;
+  }
+
+  .input__container input::placeholder {
+  font-size: 12px;
+  color: #444444;
+  }
+  .input__container input:focue {
+  outline: none;
+  }
+
+  .check-id__container {
+  margin-bottom: 20px;
+  }
+
+  .check-id__container input[type='checkbox'] {
+  display: none;
+  }
+
+  .check-id__container label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  }
+  
+  .login__btn__container {
+  width: 314x;
+  height: 40x;
+  background: hsl(0, 100%, 50%);
+  border: 1px solid rgba(255, 255, 255, 0,4);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .direction__container{
+  text-align: center;
+  }
+
+  .form-login{
+    text-align: center;
+  }
+</style>
+</head>
+
+<body>
+    <div class="login-wrapper">
+      <div class="login__content">
+        <div class="login__title">로그인</div>
+        <form class="form-login">
+
+          <div class="email__container">
+            <label for="user-email" class="input__title"></label>
+            <div id="email-box" class="input__container">
+              <input id="user=email" type="text" placeholder="이메일 주소 또는 전화번호">
+            </div>  
+          </div>
+
+          <div class="password__container">
+            <label for="user-password" class="input__title"></label>
+            <div id="pw-box" class="input__container"> 
+              <input id="user-password" type="password" placeholder="비밀번호"> 
+            </div>
+          </div>
+          
+          <div class="login__container">
+            <button class="login1__container" onclick="login()">로그인</button>
+            <h4>OR</h4>
+            <button class="login2__container" onclick="login()">로그인 코드 사용하기</button>
+          </div>
+
+          <div class="direction__container">
+            <p class="forgot-pw"><a href="#none">비밀번호를 잊으셨나요?</a></p>
+          </div>
+         
+          <div class="check-id__container">
+            <lavel for="check-id">
+              <input id="check-id" type="checkbox">로그인 정보 저장
+            </lavel>
+          </div>  
+
+          <div class="direction__container2">
+            <p class="sign-up">Netflix 회원이 아닌가요? <a href="#none">지금 가입하세요</a></p>
+            <P class="Google reCAPTCHA">이 페이지는 Google reCAPTCHA의 보호를 받아 사용자가 로봇이 아님을 확인합니다. <a href="#none">자세히 알아보기.</a></P>
+          </div>  
+        </form>
+      </div>
+      <main>Login UI</main>
   </body>
 </html>
