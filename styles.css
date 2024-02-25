@@ -1,4 +1,264 @@
+/*포지션 관련해서 질문하기 바디 릴레이티브, 백그라운드 앱솔루트 해야지만 z-index가 작동하는 이유는?
+둘 다 릴레이티브해서 각각 z-intex 설정해줘도 안 되던데 왜일까?*/
+/*기본 설정에서 왜 외곽에 흰 공간에 생길까요...마진이 8 들어가있네요...마진0줬습니다....*/
+/*잘 안 되었던 부분: 배경 이미지 크기 설정. 원래는 .backgrund 사이즈를 100 vh, vw로 주었는데 그렇게 하니 스크롤링되는 푸터 부분까지 
+백그라운드 이미지가 적용되지 않았습니다. 또, 1920 해상도 모니터에서는 멀쩡히 보이다가 1600 해상도 모니터에서는 이미지가 화면 끝까지 커버되지
+않아 공백이 발생하기도 했습니다. 어느 모니터에서든 스크롤링 되는 영역 끝까지 이미지가 덮이도록 자동 확대되는 코드를 추가하고 싶은데
+어떻게 해야할지 잘 모르겠습니다. 이미지 사이즈 cover 를 줘보았는데, 화면에 맞추어 축소는 되지만 확대는 안 되는 거 같습니다... */
+/*input에서 border와 Outline의 차이*/
+
 body {
-  background-color: black;
-  color: grey;
+  position: relative;
+  margin: 0;
+  width: 1600px;
+  height: 900px;
+  /* z-index: 2; */
+}
+
+.header-box {
+  height: 80px;
+  padding: 20px 30px;
+}
+
+.background{
+  /* 포지션의 기준을 body(relative)에 두기. 세로 스크롤 감안하여 높이 넉넉하게 설정 */
+  position: absolute; 
+  width: 1600px;
+  height: 1210px;
+  /*배경 이미지+검은색 투명 그라데이션+이미지 뒤로 보내기*/ 
+  background-image: linear-gradient(
+    rgba(10,10,10,0.6)5%,
+    rgba(10,10,10,0.38)15%,
+    rgba(10,10,10,0.38)90%,
+    rgba(10,10,10,0.6)100%), url("images/bg.jpg");
+  z-index: -1;
+}
+
+main {
+  height: 700px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main-contents{
+  display: inline-block;
+
+  /*위치 센터에서 살짝 위로 이동*/
+  position: relative;
+  top: -40px;
+
+  /* div 크기와 컬러, 라운딩 설정 */
+  padding: 30px 60px;
+  
+  width: 300Px;
+  height: 600px;
+  background-color: rgba(10, 10, 10, 0.9);
+  border-radius: 1.2%;
+
+  /* 텍스트 설정 */
+  color: #aaaaaa;
+}
+
+h1 {
+  color: white;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+h1, .text-left{
+  text-align: left;
+}
+
+.maintext-small{
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+#blue-text{
+  color:rgb(23, 128, 255);
+}
+
+p {
+  margin: 0px;
+}
+
+.text-lighter{
+  font-weight: lighter;
+}
+
+/* 로그인 입력창 */
+input, button {
+  border-radius: 5px;
+  color: white;
+}
+
+.input-box{
+  position: relative;
+  margin: 18px 4px;
+}
+
+.input-box input{
+  padding: 15px 0px 0px 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px gray solid;
+  outline: none;
+}
+
+.input-box label{
+  padding: 10px 20px;
+  position: absolute;
+  cursor:text;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+
+.input-box input, .input-box label{
+  width: 280px;
+  height: 32px;
+}
+
+.input-box input:focus + label{
+  font-size: 11px;
+  top: -10px;
+}
+
+.input-box input:focus{
+  border: 1px white solid;
+}
+
+/*로그인 버튼*/
+.login-box {
+  text-align: center;
+}
+
+input[type="submit"]{
+  width: 300px;
+  height: 40px;
+  background-color: red;
+  border-width: 0px;
+}
+
+input[type="submit"]:hover{
+  background-color: rgb(177,42,37);
+}
+
+/*로그인 코드 사용하기 버튼*/
+button{
+  width: 300px; 
+  height: 40px;
+  border-width: 0px;
+  color: white;
+  background-color: rgba(255,255,255,0.15);
+}
+
+button:hover{
+  background-color: rgba(255,255,255,0.1);
+}
+
+.main-text{
+  margin: 15px;
+}
+
+/*하이퍼링크 스타일링*/
+.main-link:link{
+  text-decoration: none;
+}
+
+.main-link:hover{
+  text-decoration: underline;
+}
+
+.main-link:visited{
+  color: white;
+}
+
+.find-passward:hover{
+  color: rgb(189, 189, 189);
+}
+
+.find-passward{
+  color: white;
+  font-weight: lighter;
+}
+
+/*체크박스 텍스트 컬러*/
+.check-box{
+  position:relative;
+  width: 300px;
+  hight: 19px;
+  color: white;
+}
+
+/*체크박스 input태그 숨김처리*/
+input[type="checkbox"]{
+  display: none;
+}
+
+/*체크박스 디폴트*/
+input[type="checkbox"] + label[id="new-checkbox"] {
+  display: inline-block;
+  margin: 5px 0px 15px 5px;
+  width: 13px;
+  height: 13px;
+  border: 0.7px #818181 solid;
+  border-radius: 2px;
+}
+
+/* 체크박스 체크 시 추가 콘텐츠로 특수문자가 보이도록*/
+input[type="checkbox"]:checked + label::after{
+  content: '✓';
+  position: absolute;
+  font-size: 14px;
+  width: 13px;
+  height: 13px;
+  text-align: center;
+}
+
+/*체크박스 옆 텍스트라벨 위치 설정*/
+#check-info {
+  position: absolute;
+  display: inline-block;
+  margin: 5px 0px 0px 10px;
+  
+}
+
+.check-box, .weight-normal, .input-box, #sign-up{
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.footer-flex{
+  height: 400px;
+  background-color: rgba(10, 10, 10, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-box{
+  width: 800px;
+  display: flex;
+  flex-flow: column wrap;
+  color: #898989;
+  gap: 25px;
+}
+
+.footer-link{
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-text{
+  font-size: 11px;
+}
+
+.lang img {
+  width: 14px;
 }
