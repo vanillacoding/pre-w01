@@ -1,16 +1,82 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Netflix</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neflix</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <img src="images/logo.png" />
-    </header>
-    <main>Login UI</main>
-    <footer>Footer content</footer>
+    <div class="title">
+      <img
+        class="logo"
+        src="https://i.namu.wiki/i/TaG9M5l-SlnbsE0uX3qCjWpEifHuHhVESC0A61iefFAA1hGQrq1JFKd_gWv7Kjjjwkw5ey9CPAPbTb3A5M35TQ.svg"
+      />
+    </div>
+    <div class="container">
+      <h1 class="loginLabel">로그인</h1>
+      <form class="inputSpace">
+        <input
+          type="text"
+          placeholder="이메일 주소 또는 전화번호"
+          class="idInput"
+        />
+        <input type="password" placeholder="비밀번호" class="pwInput" />
+        <button class="loginBtn">로그인</button>
+        <a class="forgotBtn">비밀번호를 잊으셨나요?</a>
+      </form>
+
+      <footer class="etc">
+        <div>
+          <input type="checkbox" />
+          <label>로그인 정보 저장</label>
+        </div>
+
+        <p class="signup">
+          Netflix 회원이 아닌가요?
+          <a class="goSignup">지금 가입하세요.</a>
+        </p>
+
+        <div class="check">
+          <span
+            >이 페이지는 Google reCAPTCHA의 보호를 받아 사용자가 로봇이 아님을
+            확인합니다.
+            <button class="detail">자세히 알아보기.</button>
+          </span>
+        </div>
+      </footer>
+    </div>
+
+    <footer class="footer">
+      <div class="question">
+        질문이 있으신가요? 문의 전화: 010-9400-0379(신희현)
+      </div>
+
+      <ul>
+        <li>자주 묻는 질문</li>
+        <li>고객 센터</li>
+        <li>이용 약관</li>
+        <li>개인정보 처리방침</li>
+      </ul>
+      <ul>
+        <li>쿠키 설정</li>
+        <li>회사 정보</li>
+      </ul>
+
+      <select class="language">
+        <option>한국어</option>
+        <option>영어</option>
+      </select>
+
+      <div class="company">
+        <div>넷플릭스 클론코딩 전화번호: 010-9400-0379(신희현)</div>
+        <div>대표 : 신희현</div>
+        <div>이메일 주소 : lupinworld22@gmail.com</div>
+        <div>주소 : 비밀</div>
+        <div>사업자등록번호 : 없음</div>
+        <div>클라우드 호스팅: Amazon 들어가고 싶다.</div>
+        <div>공정거래위원회 웹사이트</div>
+      </div>
+    </footer>
   </body>
 </html>
