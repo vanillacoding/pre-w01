@@ -1,4 +1,129 @@
 body {
-  background-color: black;
-  color: grey;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/c0b69670-89a3-48ca-877f-45ba7a60c16f/26a4e28e-4e7d-4cb0-a0bc-455a13997325/KR-ko-20240212-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  height: 100%;
+}
+
+.title {
+  margin: 27px;
+  align-self: stretch;
+}
+
+.logo {
+  height: 44px;
+}
+
+.container {
+  width: 320px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 48px 68px;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginLabel {
+  color: white;
+}
+
+.inputSpace {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  margin-bottom: 120px;
+}
+
+.idInput,
+.pwInput {
+  padding: 16px 16px 8px;
+  line-height: 1.5;
+  border: 0.1px solid #8c8c8c;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  color: white;
+  align-self: stretch;
+}
+
+.loginBtn {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 15px;
+  align-self: stretch;
+}
+
+.signup {
+  color: #8c8c8c;
+}
+
+.goSignup {
+  color: white;
+}
+
+.check {
+  font-size: 11px;
+  color: #8c8c8c;
+}
+
+.detail {
+  font-size: 11px;
+  border: none;
+  background-color: transparent;
+  color: #0071eb;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+.loginBtn:hover {
+  background-color: rgb(200, 0, 0);
+  transition: 0.7s;
+}
+
+.footer {
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-self: stretch;
+  margin: 50px -8px -8px -8px;
+  padding: 80px 30px;
+  color: #8c8c8c;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.language {
+  width: 100px;
+  height: 35px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+ul {
+  margin-left: -60px;
+}
+
+li {
+  font-size: 14px;
+  text-decoration: underline;
+  float: left;
+  list-style-type: none;
+  margin-left: 50px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.company {
+  font-size: 12px;
 }
