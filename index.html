@@ -4,13 +4,104 @@
     <meta charset="utf-8" />
     <title>Netflix</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header>
-      <img src="images/logo.png" />
-    </header>
-    <main>Login UI</main>
-    <footer>Footer content</footer>
+    <div class="wrap">
+      <div class="box_bg">
+        <img src="./images/bg.jpg" alt>
+      </div>
+      <header class="header">
+        <h1 class="logo">
+          <span class="blind">netflix</span>
+          <img src="images/logo.png" alt/>
+        </h1>
+      </header>
+      <main class="container">
+        <div class="box_login">
+          <h2 class="title">로그인</h2>
+          <form class="form">
+            <div class="box_input">
+              <input type="email" id="input_id" placeholder="이메일 주소 또는 전화번호">
+              <label for="input_id" class="blind">이메일 주소 또는 전화번호</label>
+            </div>
+            <div class="box_input">
+              <input type="password" id="input_password" placeholder="비밀번호">
+              <label for="input_password" class="blind">비밀번호</label>
+            </div>
+            <button type="button" class="btn_login">로그인</button>
+            <a href="#" class="link_help">비밀번호를 잊으셨나요?</a>
+          </form>
+          <div class="box_other">
+            <div class="box_checkbox">
+              <input type="checkbox" id="login_save" class="blind">
+              <label for="login_save">로그인 정보 저장</label>
+            </div>
+            <p class="text_sigh">
+              Netflix 회원이 아닌가요?
+              <a href="#">지금 가입하세요.</a>
+            </p>
+            <p class="text_captcha">
+              이 페이지는 Google reCAPTCHA의 보호를 받아 사용자가 로봇이 아님을 확인합니다.
+              <button type="button" class="btn_more">자세히 알아보기.</button>
+            </p>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="inner">
+          <p class="text_call">
+            질문이 있으신가요? 문의 전화: 
+            <a href="tel:00-308-321-0161">00-308-321-0161 (수신자 부담)</a>
+          </p>
+          <ul class="box_link">
+            <li class="list_link">
+              <a href="#" class="link_footer">자주 묻는 질문</a>
+            </li>
+            <li class="list_link">
+              <a href="#" class="link_footer">고객 센터</a>
+            </li>
+            <li class="list_link">
+              <a href="#" class="link_footer">이용 약관</a>
+            </li>
+            <li class="list_link">
+              <a href="#" class="link_footer">개인정보 처리방침</a>
+            </li>
+            <li class="list_link">
+              <a href="#" class="link_footer">쿠키 설정</a>
+            </li>
+            <li class="list_link">
+              <a href="#" class="link_footer">회사 정보</a>
+            </li>
+          </ul>
+          <div class="box_select">
+            <label for="language_select" class="
+            blind">언어 선택</label>
+            <select id="language_select">
+              <option value="한국어">한국어</option>
+              <option value="English">English</option>
+            </select>
+          </div>
+          <div class="box_company_info">
+            <p class="text_info">넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 00-308-321-0161 (수신자 부담)</p>
+            <p class="text_info">대표: 레지널드 숀 톰프슨
+            </p>
+            <p class="text_info">이메일 주소: korea@netflix.com
+            </p>
+            <p class="text_info">주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161
+            </p>
+            <p class="text_info">사업자등록번호: 165-87-00119
+            </p>
+            <p class="text_info">클라우드 호스팅: Amazon Web Services Inc.
+            </p>
+            <p class="text_info">
+              <a href="#" class="link_ftc">공정거래위원회 웹사이트</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
