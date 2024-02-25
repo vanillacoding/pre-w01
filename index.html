@@ -1,16 +1,78 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
+  
+<head>
     <meta charset="utf-8" />
     <title>Netflix</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
   </head>
+  
   <body>
-    <header>
-      <img src="images/logo.png" />
-    </header>
-    <main>Login UI</main>
-    <footer>Footer content</footer>
+    <div class="background"></div>
+    <div class="header-box">
+      <header>
+        <img src="images/logo.png" />
+      </header>
+    </div>
+
+    <main>
+      
+      <div class="main-contents">
+      
+        <h1>로그인</h1>
+
+        <form>
+          
+          <div class="input-box font-normal">
+            <input type="text" id="id" required /> <!--필수 값을 입력하지 않았을 때 알림이 뜨게 하기 위한 속성값-->
+            <label for="id">이메일 주소 또는 전화번호</label>
+          </div>
+
+          <div class="input-box font-normal">
+            <input type="password" id="password" required/>
+            <label for="password">비밀번호</label>
+          </div>
+          <div class="login-box">
+            <input class="font-normal" type="submit" value="로그인" />
+            <div class="gray-centertext main-text font-normal">OR</div>
+            <button calss="weight-normal font-normal">로그인 코드 사용하기</button>
+            <div class="main-text"><a class="find-passward main-link weight-normal" href="https://www.netflix.com/kr/LoginHelp">비밀번호를 잊으셨나요?</a></div>
+         </div>
+          <div class="check-box text-left">
+            <input type="checkbox" id="login-info">
+            <label for="login-info" id="new-checkbox"></label>
+            <div id="check-info"><label for="login-info">로그인 정보 저장</label></div>
+          </div>
+        </form>
+
+        <div class="text-left">
+          <span class="weight-normal">Netflix 회원이 아닌가요?</span>
+          <a class="main-link" id="sign-up" href="https://www.netflix.com/kr/">지금 가입하세요.</a>
+          <p class="maintext-small text-lighter">이 페이지는 Google reCAPTCHA의 보호를 받아 사용자가 로봇이 아님을 확인합니다.<a class="main-link" id="blue-text">자세히 알아보기.</a></p>
+        </div>
+    </main>
+
+    <footer>
+      <div class="footer-flex"> 
+        <div class="footer-box">
+          <div class="weight-normal">질문이 있으신가요? 문의 전화: <a>00-308-321-0161 (수신자 부담)</a></div>
+          <div class="lang">
+              <img src="images/language.png"/>
+            <select>
+              <option value="1">한국어</option>
+              <option value="2">English</option>
+            </select>
+          </div>
+          <div class="footer-link weight-normal">
+            <a>자주 묻는 질문</a><a>고객 센터</a><a>이용 약관</a><a>개인 정보 처리 방침</a><a>쿠키 설정</a><a>회사 정보</a>
+          </div>
+          <p class="small-text">넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 00-308-321-0161 (수신자 부담)
+          <br>대표: 레지널드 숀 톰프슨<br>이메일 주소: korea@netflix.com<br>주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161
+          <br>사업자등록번호: 165-87-00119<br>클라우드 호스팅: Amazon Web Services Inc.<br>공정거래위원회 웹사이트</p>
+        </div>
+      </div>
+    </footer>
   </body>
+
 </html>
