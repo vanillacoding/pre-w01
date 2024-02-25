@@ -1,4 +1,249 @@
 body {
+  box-sizing: border-box;
   background-color: black;
   color: grey;
+  margin: 0;
+  position: relative;
+  font-size: 16px;
+}
+
+header {
+  position: absolute;
+  padding: 24px;
+  top: 0;
+  left: 0;
+}
+
+header h1{
+  margin: 0;
+}
+
+header img{
+  width: 148px;
+}
+
+
+.bg-box{
+  padding: 1px;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+  url(./images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-box{
+  background-color: rgba(0,0,0,0.7);
+  width: 314px;
+  margin: 150px auto 60px;
+  padding: 48px 68px;
+  border-radius: 4px;
+}
+
+.login-box h2{
+  font-size: 2rem;
+  color: white;
+  margin-top: 28px;
+}
+
+.login-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+input{
+  line-height: 1.5rem;
+  font-size: 1rem;
+  background-color: rgba(0,0,0,0.2);
+  padding: 1rem 0.8rem;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+input:focus{
+  outline: none;
+  border-color: white;
+  border-width: 2px;
+}
+
+.login-btn{
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 10px 16px;
+  color: white;
+  background-color: red;
+  border: none;
+  transition: all ease 0.3s;
+}
+
+.submit:hover{
+  background-color: rgb(199, 6, 6);
+}
+
+.login-form>p{
+  color: rgba(255,255,255,0.7);
+  font-weight: 400;
+  margin: 0;
+}
+
+.find-pw{
+  color: white;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+.find-pw:hover{
+  color: rgb(183, 183, 183);
+  text-decoration: underline;
+}
+
+.code{
+  background-color:#dadada32 ;
+}
+
+.code:hover{
+  background-color:#dadada0e ;
+}
+
+.checkbox{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: white;
+}
+
+.pseudo-checkbox{
+  width: 18px;
+  height: 18px;
+  border: 1px solid #8c8c8c;
+  border-radius: 4px;
+  transition: all ease-in 0.3s;
+}
+
+.pseudo-checkbox:hover{
+  border-color: white;
+}
+
+input[type='checkbox']{
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  display: none;
+}
+
+input[type='checkbox']:hover{
+  background-color: rgba(255, 255, 255, 0.477);
+}
+
+.subscribtion{
+  color: rgba(255,255,255,0.7);
+}
+
+.subscribtion>a{
+  color: white;
+  margin-left: 4px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.subscribtion>a:hover{
+  text-decoration: underline;
+}
+
+.sub-info{
+  font-size: 13px;
+  color: #8c8c8c;
+  margin-bottom: 50px;
+}
+
+.sub-info>a{
+  color: #0071eb;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+.sub-info>a:hover{
+  text-decoration: underline;
+}
+
+footer{
+  background-color: rgba(0,0,0,0.6);
+  padding: 72px 32px
+}
+
+footer>p{
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+footer>p>a{
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.settings{
+  padding: 0;
+  display: flex;
+  list-style: none;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px 0;
+}
+
+.settings>li{
+  flex:0 0 calc(25% - 0.75rem);
+}
+
+.settings>li>a{
+  color: #8c8c8c;
+  font-size: 0.825rem;
+}
+
+.footer-info{
+  margin-top: 24px;
+}
+
+.locale-box{
+  position: relative;
+}
+
+.locale-icon{
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.locale{
+  background: transparent;
+  color: white;
+  padding: 8px 36px 8px 32px;
+  border-radius: 4px;
+  -webkit-appearance: none;
+}
+
+.locale:focus{
+  box-sizing: border-box;
+  outline: none;
+  border: 2px solid white;
+}
+
+.arrow-down{
+  position: absolute;
+  top: 8px;
+  left: 82px;
+}
+
+.footer-info>p{
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.footer-info a{
+  text-decoration: none;
+  color: #8c8c8c;
 }
