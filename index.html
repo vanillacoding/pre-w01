@@ -1,16 +1,172 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <style>
+      body { 
+        background-image: url('images/bg.jpg');
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        overflow: hidden;
+      }
+      .content-wrapper { 
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        min-height: 100vh; 
+      }
+      .logo-box { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 30px 100px 100px 150px;
+        z-index:2;
+      }
+      .login-box { 
+        text-align:center;
+        background-color: rgba(0, 0, 0, 0.7); 
+        padding: 20px; 
+        width: 300px; 
+        height: auto; 
+        margin: 0 auto; 
+        border-radius: 10px; 
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+      }
+      .overlay-wrapper::before {
+        content: ""; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }  
+      .overlay-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      .login-title {
+        padding: 5px;
+        color: white;
+        text-align: left;
+      }
+
+
+      
+    .login-box input[type="email"],
+    .login-box input[type="password"],
+    .login-box button {
+      width: calc(100% - 20px); 
+      padding: 10px;
+      margin: 8px 0; 
+      border: 1px solid #ddd; 
+      border-radius: 4px; 
+      background-color: transparent; 
+      color: white; 
+    }
+
+    .login-box button[type="submit"] {
+      background-color: #e50914; 
+      color: white; 
+      cursor: pointer;
+      border: none;
+    }
+    .login-box button[type="submit2"] {
+      background-color: rgb(66, 66, 66); 
+      color: white; 
+      cursor: pointer;
+      border: none;
+    }
+    .or-text {
+      color: rgb(139, 137, 137); 
+      margin: 8px 0;
+      font-size: 14px; 
+    }
+    .forgot-text {
+      color: rgb(252, 248, 248); 
+      margin: 8px 0; 
+      font-size: 14px; 
+    }
+    .remember-me {
+      color: rgb(252, 248, 248); 
+      font-size: 14px; 
+      display: flex; 
+      align-items: center; 
+      margin-top: 8px; 
+    }
+
+    .remember-me input[type="checkbox"] {
+      margin-right: 5px; 
+    }
+
+    .remember-me-wrapper {
+      align-self: flex-start; 
+      width: 100%; 
+    }
+    .signup-text {
+      text-align: left;
+      color: rgb(252, 248, 248); 
+      margin: 15px 0; 
+      font-size: 14px; 
+    }
+    .notrobot-text {
+      text-align: left;
+      color: rgb(114, 112, 112); 
+      margin: 15px 0; 
+      font-size: 12px; 
+    }
+
+    .link, .link-blue {
+      text-decoration: none; 
+      color: white; 
+    }
+
+    .link-blue {
+      color: blue; 
+    }
+
+    .link:hover, .link-blue:hover {
+      text-decoration: underline; 
+    }
+    </style>
     <meta charset="utf-8" />
     <title>Netflix</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
+    <div class="logo-box">
       <img src="images/logo.png" />
-    </header>
-    <main>Login UI</main>
-    <footer>Footer content</footer>
+    </div>
+    <div class="overlay-wrapper">
+      <div class="content-wrapper">
+        <div class="login-box">
+          <div class="remember-me-wrapper">
+            <h2 class="login-title">로그인</h2>
+          </div>
+          <input type="email" id="email" name="email" placeholder="이메일" required>
+          <input type="password" id="password" name="password" placeholder="비밀번호" required>
+          <button type="submit">로그인</button>
+          <div class="or-text">OR</div>
+          <button type="submit2">로그인 코드 사용하기</button>
+          <div class="forgot-text"><a href="/forgot-password" class="link">비밀번호를 잊으셨나요?</a></div>
+          <div class="remember-me-wrapper">
+            <label class="remember-me">
+              <input type="checkbox" name="remember" id="remember">
+            로그인 정보 저장
+            </label>
+            <div class="signup-text">Netflix 회원이 아닌가요? <a href="/signup" class="link">지금 가입하세요.</a></div>
+            <div class="notrobot-text">이 페이지는 Google reCAPTCHA의 보호를 받아 사용자가 로봇이 아님을 확인합니다. <a href="https://www.google.com/recaptcha/about/" class="link-blue">자세히 알아보기.</a></div>
+      </div>
+    </div>
+   </div>
   </body>
 </html>
