@@ -2,7 +2,7 @@ html {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/bg.jpg');
   background-position: center top;
   background-size: cover;
-  min-height: 100%;
+  min-height: 100vh;
   min-width: 100%;
 }
 
@@ -15,19 +15,30 @@ a {
   color: whitesmoke;
 }
 
+body {
+  margin: 0px;
+}
+
 p {
   color: rgba(230, 222, 222, 0.5);
 }
 
+main-contents {
+  min-height: 100vh;
+  display: block;
+  width: 100%;
+}
+
+/* main -> */
+
 .head-logo {
   margin-left: 120px;
+  margin-top: 30px;
 }
 
 .login-box {
   display: block;
-  position: relative;
   background-color: #000000c5;
-  /* size: 450px 600px; */
   box-sizing: border-box;
   border-radius: 5px;
   width: 450px;
@@ -35,6 +46,7 @@ p {
   margin: 0 auto;
   text-align: center;
   padding: 50px 60px 30px;
+  margin-bottom: 40px;
 }
 
 .login-form {
@@ -133,3 +145,58 @@ p {
 }
 
 /* footer -> */
+
+footer {
+  width: 100%;
+  height: 380px;
+  bottom: 0px;
+  box-sizing: border-box;
+  background-color: #000000c5;
+}
+
+.footer-contents {
+  margin-left: 50px;
+}
+
+.connect-call, .footer-contents a {
+  color: rgba(230, 230, 230, 0.5);
+}
+
+.list-cover {
+  display: flex;
+}
+.ul-wrapper {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: square; 
+  box-sizing: border-box;
+  min-width: 1100px;
+  max-height: 70px;
+  display: inline-block;
+  padding: 0px 0px;
+}
+
+li {
+  display: inline-grid;
+  width: 24%;
+  height: 30px;
+}
+
+li > a{
+  text-decoration: underline;
+}
+
+.lan-selector {
+  background-color: #000000c5;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: right;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.co-info {
+  font-size: 13px;
+}
