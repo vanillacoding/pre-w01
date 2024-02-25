@@ -1,4 +1,37 @@
 body {
   background-color: black;
-  color: grey;
+  color: white;
+  text-align:center;
+  }
+.solid {
+  border: 5px solid;
+  padding : 4px 4px;
+
+}
+.ph1 {
+  border: 5px none;
+  background-color: red;
+  padding: 15px 4px ;
+  
+}
+
+input[type="checkbox"]{display: none;}
+
+input[type="checkbox"] + label{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 3px solid black;
+  position : relative
+}
+
+footer {
+  border: 5px solid;
+  margin: 200px 20px ;
+  padding: 20px 0px ;
+  color: white;
+}
+
+#COOKIE {
+  text-align: LEFT;
 }
