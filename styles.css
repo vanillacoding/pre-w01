@@ -1,4 +1,133 @@
+header {
+  margin-top: 20px;
+  margin-left: 400px;
+}
+
+header img {
+  width: 150px;
+  height: auto;
+}
+
 body {
+  background: url("images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login {
+  padding: 30px;
+}
+.loginbox {
+  width:450px;
+  height:700px;
+  margin: 0 auto;
+  border: 1px black;
   background-color: black;
-  color: grey;
+  opacity: 0.9;
+}
+
+.logintext {
+  opacity: 1;
+  color: white;
+  position: relative;
+  top: 50px;
+  left: 60px; /* 왼쪽으로 65px만큼 이동합니다. */
+  display: flex;
+  flex-direction: column;
+}
+
+.logintext a{
+  text-decoration: none;
+}
+
+.logintext input,
+.logintext button,
+.logintext p {
+  margin-bottom: 15px; /* logintext 내의 모든 요소들 간격 조정 */
+}
+
+.logintext input {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.loginbutton {
+  width: fit-content;
+  background-color: #ff0a16;
+  color: white;
+  padding: 20px 135px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.forgotpassword a {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: center;
+}
+
+.loginetc {
+  margin-top: 120px; /* loginetc와 logintext 사이의 간격을 더 넓게 조정 */
+  margin-left: 60px; /* 왼쪽 여백을 적용합니다. */
+  color: #757575;
+}
+
+.loginetc input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.loginetc p {
+  margin-bottom: 15px; /* loginetc 내의 모든 요소들 간격 조정 */
+}
+
+.loginetc a {
+  color: white;
+  text-decoration: underline;
+}
+
+.loginetc .capcha {
+  font-size: 12px; /* 텍스트 크기를 작게 설정합니다. */
+}
+
+.capcha a{
+  color: blue;
+}
+
+footer {
+  background-color: #000000; /* 배경색을 검은색으로 설정 */
+  color: #ffffff; /* 텍스트 색상을 흰색으로 설정 */
+  padding: 50px; /* 내부 여백 설정 */
+  padding-left: 350px;
+  opacity: 0.9;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column; /* 내용을 좌우로 최대한 분산 배치 */
+}
+
+.footer-container p {
+  font-size:13px;
+  color: #757575;
+}
+
+.footer-container a {
+  color: #757575;
+}
+
+.footer-links {
+  width: 70%; /* footer 섹션의 너비 설정 */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 섹션을 3개의 열로 설정 */
+}
+
+.footer-links a {
+  color: #ffffff; /* 링크 색상 설정 */
+}
+
+.footer-company p{
+  font-size: 10px;
 }
