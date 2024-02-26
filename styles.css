@@ -170,14 +170,10 @@ main {
 .login_cont .login_other p {
   margin-top: 16px;
   color: #737373;
-  font-size: 16px;
-  font-weight: 400;
 }
 
 .login_cont .login_other p a {
   color: #fff;
-  font-size: 16px;
-  font-weight: 400;
 }
 
 .login_cont .login_other .notice {
@@ -204,7 +200,6 @@ footer {
 
 .footer_cont .footer_qna {
   margin: 0 0 30px;
-  font-size: 1em;
 }
 
 .footer_cont .footer_links li {
@@ -258,8 +253,7 @@ footer {
 
 .footer_cont .copy_text {
   color: gray;
-  font-size: 0.75em;
-  line-height: 1em;
+  font-size: 12px;
   margin: 20px 0;
 }
 
