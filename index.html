@@ -5,12 +5,65 @@
     <title>Netflix</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/3f01f44bcd.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <img src="images/logo.png" />
-    </header>
-    <main>Login UI</main>
-    <footer>Footer content</footer>
+    <div class="login_wrap">
+      <header>
+        <img src="images/logo.png" />
+      </header>
+      <main>
+        <div class="login_cont">
+          <form class="login_form">
+            <h2>로그인</h2>
+            <input placeholder="이메일 주소 또는 전화번호">
+            <input placeholder="비밀번호">
+            <button>로그인</button>
+            <ul class="login_save">
+              <li>
+                <input type="checkbox" id="remember">
+                <label for="remember"></label>
+                <span>로그인 정보 저장</span>
+              </li>
+              <li>
+                <a>도움이 필요하신가요?</a>
+              </li>
+            </ul>
+          </form>
+          <div class="login_other">
+            <p>Netflix 회원이 아닌가요? <a>지금 가입하세요.</a></p>
+            <p class="notice">이 페이지는 Google reCAPTCHA의 보호를 받아 사용자가 로봇이 아님을 확인합니다. <a>자세히 알아보기.</a></p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer_cont">
+          <p class="footer_qna">질문이 있으신가요? 문의 전화: <a>00-308-321-0161 (수신자 부담)</a></p>
+          <ul class="footer_links">
+            <li><a>자주 묻는 질문</a></li>
+            <li><a>고객 센터</a></li>
+            <li><a>이용 약관</a></li>
+            <li><a>개인정보 처리방침</a></li>
+            <li><a>쿠키 설정</a></li>
+            <li><a>회사 정보</a></li>
+          </ul>
+          <div class="language_picker">
+            <select>
+              <option value="한국어">한국어</option>
+              <option value="English">English</option>
+            </select>
+          </div>
+          <ul class="copy_text">
+            <li>넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 00-308-321-0161 (수신자 부담)</li>
+            <li>대표: 레지널드 숀 톰프슨</li>
+            <li>이메일 주소: korea@netflix.com</li>
+            <li>주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161</li>
+            <li>사업자등록번호: 165-87-00119</li>
+            <li>클라우드 호스팅: Amazon Web Services Inc.</li>
+            <li><a>공정거래위원회 웹사이트</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

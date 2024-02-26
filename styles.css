@@ -1,4 +1,266 @@
+/* reset css */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input {
+  border: none;
+}
+
+input[type="checkbox"] + label:hover {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: 2px solid #fff;
+}
+
+select {
+  appearance:none;
+}
+
+select:focus {
+  outline: 2px solid #fff;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+/* login css */
 body {
-  background-color: black;
+  position: relative;
+  background: url("images/bg.jpg") left center no-repeat fixed;
   color: grey;
+}
+
+.login_wrap {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  padding-left: 3%;
+  background: linear-gradient(180deg,rgba(0,0,0,.5) 0,transparent);
+}
+
+header img {
+  width: 166px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_cont {
+  width: 314px;
+  margin-bottom: 90px;
+  padding: 60px 68px 40px;
+  background: rgba(0,0,0,.75);
+  border-radius: 4px;
+}
+
+.login_cont .login_form {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login_cont .login_form h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.login_cont .login_form > input {
+  padding: 17px 20px;
+  margin-bottom: 16px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+.login_cont .login_form input::placeholder {
+  color: #8c8c8c;
+  font-size: 16px;
+}
+
+.login_cont .login_form button {
+  background-color: #e50914;
+  padding: 14px;
+  margin: 24px 0 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.login_cont .login_form ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login_cont .login_form ul li {
+  display: flex;
+  align-items: center;
+  color: #b3b3b3;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.login_cont .login_form .login_save li input[type="checkbox"]{
+  display: none;
+}
+.login_cont .login_form .login_save li input[type="checkbox"] + label{
+  width: 16px;
+  height: 16px;
+  position: relative;
+  background: #737373;
+  border: 0;
+  border-radius: 2px;
+  margin-bottom: 1px;
+}
+.login_cont .login_form .login_save li input[id="remember"]:checked + label::after{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 12px;
+  color: #000;
+  text-align: center;
+}
+
+.login_cont .login_form .login_save li span {
+  margin-left: 5px;
+}
+
+.login_cont .login_other {
+  min-height: 161px;
+}
+
+.login_cont .login_other p {
+  margin-top: 16px;
+  color: #737373;
+}
+
+.login_cont .login_other p a {
+  color: #fff;
+}
+
+.login_cont .login_other .notice {
+  margin-top: 11px;
+  color: #8c8c8c;
+  font-size: 13px;
+}
+
+.login_cont .login_other .notice a {
+  color: #0071eb;
+  font-size: 13px;
+}
+
+footer {
+  padding: 30px 0;
+  background: rgba(0,0,0,.75);
+  color: #737373;
+}
+
+.footer_cont {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer_cont .footer_qna {
+  margin: 0 0 30px;
+}
+
+.footer_cont .footer_links li {
+  display: inline-block;
+  width: 22%;
+  font-size: 13px;
+  margin-bottom: 16px;
+  padding: 0 22px 0 0;
+  vertical-align: top;
+}
+
+.footer_cont .language_picker {
+  position: relative;
+  width: 120px;
+  height: 48px;
+  margin-top: 20px;
+}
+
+.footer_cont .language_picker::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  content: "\f0ac";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.footer_cont .language_picker::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  right: 10px;
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 11px;
+}
+
+.footer_cont .language_picker select {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #333;
+  color: #737373;
+  border-radius: 2px;
+  padding-left: 50px;
+}
+
+
+.footer_cont .copy_text {
+  color: gray;
+  font-size: 12px;
+  margin: 20px 0;
+}
+
+.footer_cont .copy_text li {
+  margin-top: 4px;
+}
+
+.footer_cont .copy_text li:first-of-type {
+  margin-top: 0;
 }
