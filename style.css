@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+/*  Reset CSS  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: '맑은고딕',sans-serif;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+a {
+    color: #a8a8a8;
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+
+
+/*  배경 영역  */
+.wrap {
+    width: 100%;
+    height: 167vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+/*  로고 영역  */
+header img {
+    width: 7.8%;
+    margin-left: 366px;
+    margin-top: 23px;
+}
+
+
+/*  로그인 박스 영역  */
+main {
+    margin-left: 40%;
+    margin-top: 1.5%;
+    width: 446px;
+    height: 658px;
+    background-color: rgb(0,0,0,0.75);
+    border-radius: 5px;
+    position: absolute;
+}
+
+main h1 {
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 17.2px;
+    margin-left: 65.3px;
+    font-size: 28px;
+    font-weight: 500;
+}
+  
+input{
+    margin-left: 65.3px;
+    margin-top: 14px;
+    width: 312px;
+    height: 49.8px;
+    background-color: #333333;
+    border-radius: 4px;
+    border: none;
+    font-size: 20px;
+}
+
+input::placeholder {
+    font-size: 14.8px;
+    padding: 12px;
+    color: #929292;
+}
+
+input[type=submit]{
+    width: 312px;
+    height: 50.6px;
+    background-color: #d61a18;
+    color: white;
+    font-size: 14.8px;
+    margin-top: 38px;
+    border-radius: 4px;
+    cursor: pointer;   
+}
+
+input[type=checkbox] {
+    width: 23px;
+    height: 16px;
+    border-radius: 5px;
+    accent-color: gray;
+    position: relative;
+    top: 3px;
+}
+
+label {
+    color: #929292;
+    font-size: 12.8px;
+}
+
+.input-box a {
+    float: right;
+    margin-top: 14.8px;
+    margin-right: 64px;
+    color: #929292;
+    font-size: 12.8px;
+}
+
+.content h2{
+    margin-top: 110px;
+    font-size: 14.6px;
+    font-weight: lighter;
+    margin-left: 65.3px;
+    color: #929292;
+}
+
+.join {
+    color: white;
+    margin-left: 6px;
+}
+
+.content h3 {
+    color: #929292;
+    margin-left: 65.3px;
+    font-size: 12.2px;
+    font-weight: lighter;
+}
+
+.content h3 a {
+    color: rgb(73, 73, 228);
+    margin-left: 4px;
+}
+
+
+/*  Footer 영역  */
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 452px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgb(0,0,0,0.75);
+    color: #c3c3c3;
+ }
+
+.footer .question {
+    margin-left: 366px;
+    margin-top: 60px;
+    font-size: 17px; 
+}
+
+.footer .footer-cols {
+    margin-left: 366px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.footer .footer-cols a {
+    text-decoration: underline;
+}
+
+.cols1 span {
+    margin-left: 215px;
+}
+
+.cols2 {
+    margin-top: 24px;
+}
+
+.cols2 span {
+    margin-left: 246px;
+}
+
+#lang {
+    margin-left: 366px;
+    margin-top: 35px;
+    width: 120px;
+    height: 33px;
+    color: white;
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.information {
+    margin-top: 28px;
+    margin-left: 366px;
+    font-size: 12px;
+}
+  
+.information a {
+    font-size: 12px;
+    color: #c3c3c3;
+}
+  
